@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .button {
+        display: block;
+        border: none;
+        padding: 10px 20px;
+        background-color: #00AEEF;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all 300ms;
+      }
+      .button:hover {
+        background-color: #fff;
+        color: #00AEEF;
+        border: 1px solid #00AEEF;
+      }
+      .button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    </style>
+    <p>Clique no botão abaixo para fazer o download do arquivo CSV separando os valores por ponto e vírgula:</p>
+    <button id="download-button" class="button" onclick="downloadFile()">Baixar CSV</button>
+    <span id="url-link"></span>
+    <script>
+      function downloadFile() {
+        document.querySelector('#download-button').disabled = true;
+        document.querySelector('#download-button').innerHTML = "Downloading...";
+
+        google.script.run.withSuccessHandler(function(obj) {
+          window.open(obj.url, '_blank');
+          document.querySelector('#download-button').innerHTML = "Thanks!";
+        }).getCsvUrl();
+      }
+    </script>
+  </body>
+</html>
