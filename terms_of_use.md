@@ -19,9 +19,6 @@ Os desenvolvedores da extensão não se responsabilizam por quaisquer danos dire
 ## 5. Modificações nos Termos
 Os termos de uso podem ser alterados a qualquer momento, e você será notificado sobre qualquer modificação significativa. O uso continuado da extensão após essas modificações será considerado como aceitação dos novos termos.
 
-## 6. Contato
-Em caso de dúvidas sobre os termos de uso, entre em contato pelo email: suporte@csvdownloader.com.
-
 ---
 
 Última atualização: 16 de setembro de 2024
