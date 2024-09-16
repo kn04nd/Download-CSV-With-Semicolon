@@ -1,7 +1,7 @@
 # Termos de Uso da Extensão CSV Downloader para Google Sheets
 
 ## 1. Aceitação dos Termos
-Ao usar a extensão "CSV Downloader para Google Sheets", você concorda com os seguintes termos e condições. Se você não concorda com estes termos, não deve utilizar a extensão.
+Ao usar a extensão "Download CSV with semicolon", você concorda com os seguintes termos e condições. Se você não concorda com estes termos, não deve utilizar a extensão.
 
 ## 2. Uso da Extensão
 A extensão permite que você baixe planilhas do Google Sheets em formato CSV, utilizando ponto e vírgula (;) como separador de valores. A funcionalidade destina-se exclusivamente a facilitar o processo de exportação de dados.
