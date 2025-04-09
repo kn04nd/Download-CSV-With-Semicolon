@@ -4,7 +4,7 @@ var filename = "";
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createAddonMenu()
-      .addItem('Exportar CSV com ponto e virgula', 'showDownloadDialog')
+      .addItem('Export CSV with semicolon', 'showDownloadDialog')
       .addToUi();
 }
 
@@ -24,11 +24,9 @@ function processCsvUrl() {
   
   fileName = spreadsheet.getName() + ".csv";
   
-  // Obtenha os dados da planilha
   var range = sheet.getDataRange();
   var values = range.getValues();
   
-  // Converta os dados para CSV
   var csv = "";
   for (var i = 0; i < values.length; i++) {
     var row = values[i];
@@ -36,10 +34,8 @@ function processCsvUrl() {
     csv += csvRow + "\n";
   }
   
-  // Crie um arquivo temporário no Google Drive
   var file = DriveApp.createFile(fileName, csv, MimeType.CSV);
   
-  // Gere o link de download para o arquivo
   url = file.getDownloadUrl();
   
   // Remove o arquivo depois que o download for feito
