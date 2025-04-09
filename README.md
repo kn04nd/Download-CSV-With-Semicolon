@@ -26,12 +26,13 @@ Unfortunately google workspace marketplace have too many requierements to add an
 ![](https://i.imgur.com/BxAlaWV.png)
 
 3. Copy and paste the `Code.gs` file from this repo to your app scripts and create the `DownloadDialog` HTML file and do the same
+   
 ![](https://i.imgur.com/IrqdFOK.png)
 
-4. Then, just one, go to `Code.gs` in apps scripts and select the function `showDownloadDialog` and click "RUN"
+5. Then, just one, go to `Code.gs` in apps scripts and select the function `showDownloadDialog` and click "RUN"
 ![](https://i.imgur.com/RrOvH5a.png)
 
-5. Accept all de requirements to use your google drive for this app that you are creating right now
+6. Accept all de requirements to use your google drive for this app that you are creating right now
 ![](https://i.imgur.com/3xVkyTF.png)
 ![](https://i.imgur.com/laDaaLC.png)
 
@@ -43,7 +44,7 @@ You will receive and email notifying you about that!
 7. Go back to your spreadsheet browser tab and check te box:
 ![](https://i.imgur.com/AooPMwb.png)
 
-8. Done! After refreshing one your current browser tab, Now, every time that you use this specific spreadsheet, will be showing the button in "Extensions" MENU to use the app scripts to download CSV:
+8. Done! After refreshing once your current browser tab, Now, every time that you use this specific spreadsheet, will be showing the button in "Extensions" MENU to use the app scripts to download CSV:
 ![](https://i.imgur.com/Xx6PZQP.png)
 
 ## How to Use
