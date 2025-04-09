@@ -12,12 +12,6 @@ This extension simplifies the process of exporting Google Sheets to CSV files us
 - Easy and fast download process directly from Google Sheets.
 - Deleted CSV files are stored in your Google Drive trash for up to 30 days, so you can recover them if needed.
 
-## How It Works
-
-1. **Install the Extension**: Add the "Download CSV with Semicolon" extension to your Google Sheets.
-2. **Use the Extension**: Once installed, simply click the option "Export CSV with Semicolon" in your Google Sheets. A window will open, allowing you to download the CSV file.
-3. **Recover Lost Files**: If you accidentally delete the file from your local machine, it will remain in your Google Drive trash for 30 days after download, giving you ample time to recover it.
-
 ## Why This Extension?
 
 CSV files are commonly used for data exchange, especially in development environments. However, Google Sheets doesn't offer a built-in way to export CSVs with a semicolon delimiter, which is frequently required by developers in certain regions. This extension was designed to streamline this process, ensuring that your exported files are properly formatted with semicolons and UTF-8 encoding.
@@ -25,23 +19,38 @@ CSV files are commonly used for data exchange, especially in development environ
 ## Installation
 
 To install the extension:
-1. Go to the [Google Workspace Marketplace](https://workspace.google.com/marketplace).
-2. Search for "Download CSV with Semicolon".
-3. Click on the extension and install it to your Google Sheets.
+Unfortunately google workspace marketplace have too many requierements to add an a new Add-On to the marketplace, so here is the manual process:
+1. Create a spreadsheet in your google sheets that you will use everytime that you want to export to CSV with semicolon.
+
+2. Open that spreadsheet, and just for the first time go to "Extensions" -> "Apps Scripts"
+![](https://i.imgur.com/BxAlaWV.png)
+
+3. Copy and paste the `Code.gs` file from this repo to your app scripts and create the `DownloadDialog` HTML file and do the same
+![](https://i.imgur.com/IrqdFOK.png)
+
+4. Then, just one, go to `Code.gs` in apps scripts and select the function `showDownloadDialog` and click "RUN"
+![](https://i.imgur.com/RrOvH5a.png)
+
+5. Accept all de requirements to use your google drive for this app that you are creating right now
+![](https://i.imgur.com/3xVkyTF.png)
+![](https://i.imgur.com/laDaaLC.png)
+
+You will receive and email notifying you about that!
+
+6. After all, check if it shows "Execution completed":
+![](https://i.imgur.com/BPs4rj9.png)
+
+7. Go back to your spreadsheet browser tab and check te box:
+![](https://i.imgur.com/AooPMwb.png)
+
+8. Done! After refreshing one your current browser tab, Now, every time that you use this specific spreadsheet, will be showing the button in "Extensions" MENU to use the app scripts to download CSV:
+![](https://i.imgur.com/Xx6PZQP.png)
 
 ## How to Use
 
-1. Open a Google Sheets document.
-2. Navigate to the "Extensions" menu.
-3. Click on "Download CSV with Semicolon" > "Export CSV with Semicolon".
-4. A download window will appear. Save the file to your computer.
+![](https://i.imgur.com/6LjE0sm.png)
+![](https://i.imgur.com/fSQxgCu.png)
+![](https://i.imgur.com/I9DokHh.png)
 
-That's it! Your file will now be in CSV format with semicolons as delimiters and UTF-8 encoding.
-
-## Support
-
-If you encounter any issues or have any questions, please reach out to our support team at: support@csvdownloader.com.
-
----
-
-_Last updated: September 16, 2024_
+## Problems 
+Please open a issue if you have any problem
